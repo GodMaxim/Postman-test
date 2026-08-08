@@ -52,3 +52,12 @@ Examples with different actions in Postman workspace (only take a look once, no 
 
 Doc for json schema validation, to check output API response (only take a look once, no need to learn this doc) 
 - <a href="https://json-schema.org"> json schema docs </a>
+
+## What Was Done by Max Zabashta
+Within the scope of the project, REST API endpoints were tested for a local server (`http://localhost:3000`), and a comprehensive suite of automated tests was written in Postman:
+
+* **Pagination:** Tested the division of data output into pages using the `page` and `pageSize` query parameters (e.g., `?page=1&pageSize=2`).
+* **Sorting:** Verified resource sorting by specified fields and order using the `sortKey` and `sortOrder` parameters (ASC/DESC).
+* **Status Codes:** Checked that the server correctly returns various response status codes (successful `200` codes and error codes like `404`).
+* **Response Time:** Configured performance checks to monitor server response times.
+* **JSON Schema Validation:** Implemented verification of the server response structure and data types using built-in Postman schemas (`jsonSchema`).
