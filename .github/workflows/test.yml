@@ -13,6 +13,15 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start local server
+        run: npm start &  
+
+      - name: Wait for server
+        run: sleep 3  
+
       - name: Install Newman
         run: npm install -g newman
 
