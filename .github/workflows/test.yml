@@ -17,4 +17,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run API Tests
-        run: newman run postman/my-collection.json -e postman/my-environment.json
+        run: newman run store.collection.json --env-var "baseUrl=http://localhost:3000"
