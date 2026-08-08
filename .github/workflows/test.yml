@@ -17,7 +17,9 @@ jobs:
         run: npm install
 
       - name: Start local server
-        run: ./node_modules/.bin/yaml-server --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
+        run: |
+          cp mockApi/db_back_up.yaml mockApi/db_stage.yaml
+          npx yaml-server --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
 
       - name: Wait for server
         run: sleep 3  

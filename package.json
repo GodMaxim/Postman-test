@@ -14,10 +14,8 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "yaml-server": "^1.10.0"
-  },
   "devDependencies": {
-    "newman": "^6.2.2"
+    "newman": "^6.2.2",
+    "yaml-server": "^1.10.0"
   }
 }
