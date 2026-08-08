@@ -61,3 +61,4 @@ Within the scope of the project, REST API endpoints were tested for a local serv
 * **Status Codes:** Checked that the server correctly returns various response status codes (successful `200` codes and error codes like `404`).
 * **Response Time:** Configured performance checks to monitor server response times.
 * **JSON Schema Validation:** Implemented verification of the server response structure and data types using built-in Postman schemas (`jsonSchema`).
+* **Automation & CI/CD:** Exported the test collection (store.collection.json) and configured automated execution via Newman in GitHub Actions on every push.
