@@ -21,8 +21,10 @@ jobs:
           cp mockApi/db_back_up.yaml mockApi/db_stage.yaml
           npx yaml-server --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
 
-          until curl -s http://localhost:3000/info; do
-            echo "Waiting for server..."
+          counter=0
+          until curl -s http://localhost:3000/ || [ $counter -eq 15 ]; do
+            counter=$((counter+1))
+            echo "Waiting for server... ($counter/15)"
             sleep 1
           done
           
