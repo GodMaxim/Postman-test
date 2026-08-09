@@ -20,8 +20,8 @@ jobs:
         run: |
           cp mockApi/db_back_up.yaml mockApi/db_stage.yaml
           npm install wait-on --save-dev
-          npx yaml-server --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
-          npx wait-on http://localhost:3000 --timeout 30000
+          node ./node_modules/yaml-server/bin/cli.js --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
+          node ./node_modules/wait-on/bin/wait-on.js http://localhost:3000 --timeout 30000
           
       - name: Install Newman
         run: npm install -g newman
