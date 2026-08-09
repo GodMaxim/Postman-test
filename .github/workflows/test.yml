@@ -32,4 +32,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run API Tests
-        run: npm run test:api
+        run: npx newman run store.collection.json --env-var "baseUrl=http://localhost:3000"
