@@ -19,14 +19,9 @@ jobs:
       - name: Start local server and wait for it
         run: |
           cp mockApi/db_back_up.yaml mockApi/db_stage.yaml
+          npm install wait-on --save-dev
           npx yaml-server --hotReload=off --autoStart=off --port 3000 --database ./mockApi/db_stage.yaml &
-
-          counter=0
-          until curl -s http://localhost:3000/ || [ $counter -eq 15 ]; do
-            counter=$((counter+1))
-            echo "Waiting for server... ($counter/15)"
-            sleep 1
-          done
+          npx wait-on http://localhost:3000 --timeout 30000
           
       - name: Install Newman
         run: npm install -g newman
