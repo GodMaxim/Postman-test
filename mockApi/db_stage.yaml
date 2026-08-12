@@ -37,10 +37,28 @@ users:
     signUpDate: 2019-08-24
     status: active
     level: admin
+  - id: 9
+    firstName: asdasd
+    lastName: asd
+    email: asdasd.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: false
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
   - id: 2
     firstName: Bob
     lastName: Smith
     email: bob.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - id: 5
+    firstName: Dax
+    lastName: Smith
+    email: dax.smith@gmail.com
     dateOfBirth: 1997-10-31
     emailVerified: true
     signUpDate: 2019-08-24
@@ -55,21 +73,12 @@ users:
     signUpDate: 2019-08-24
     status: active
     level: consumer
-  - id: 4
-    firstName: Vesta
-    lastName: Smith
-    email: vesta.smith@gmail.com
+  - id: 8
+    firstName: kukareku
+    lastName: kukareku
+    email: kukareku.smith@gmail.com
     dateOfBirth: 1997-10-31
-    emailVerified: true
-    signUpDate: 2019-08-24
-    status: active
-    level: consumer
-  - id: 5
-    firstName: Dax
-    lastName: Smith
-    email: dax.smith@gmail.com
-    dateOfBirth: 1997-10-31
-    emailVerified: true
+    emailVerified: false
     signUpDate: 2019-08-24
     status: active
     level: consumer
@@ -91,21 +100,12 @@ users:
     signUpDate: 2019-08-24
     status: active
     level: consumer
-  - id: 8
-    firstName: kukareku
-    lastName: kukareku
-    email: kukareku.smith@gmail.com
+  - id: 4
+    firstName: Vesta
+    lastName: Smith
+    email: vesta.smith@gmail.com
     dateOfBirth: 1997-10-31
-    emailVerified: false
-    signUpDate: 2019-08-24
-    status: active
-    level: consumer
-  - id: 9
-    firstName: asdasd
-    lastName: asd
-    email: asdasd.smith@gmail.com
-    dateOfBirth: 1997-10-31
-    emailVerified: false
+    emailVerified: true
     signUpDate: 2019-08-24
     status: active
     level: consumer
